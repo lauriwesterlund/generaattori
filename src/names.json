@@ -7,6 +7,7 @@
         "Apostoliset",
         "Arvaamattomat",
         "Arveluttavat",
+        "Arvon",
         "Arvovaltaiset",
         "Atleettiset",
         "Aurinkoiset",
@@ -32,6 +33,7 @@
         "Hulppeat",
         "Hurjat",
         "Hurmaavat",
+        "Hyvät",
         "Häikäisevät",
         "Häpeämättömät",
         "Ihme",
@@ -257,6 +259,7 @@
         "Huuhkajat",
         "Hyrrät",
         "Härkätaistelijat",
+        "Hölmöläiset",
         "Höyryäjät",
         "Ihmiset",
         "Ilmestykset",
@@ -330,6 +333,7 @@
         "Nallekarkit",
         "Naperot",
         "Narskut",
+        "Nauriit",
         "Neppailijat",
         "Neropatit",
         "Nerot",
@@ -357,6 +361,7 @@
         "Perunat",
         "Peukaloiset",
         "Peukalot",
+        "Porkkanat",
         "Pingviinit",
         "Presidentit",
         "Puheenjohtajat",
@@ -428,6 +433,7 @@
         "Villasukat",
         "Voimailijat",
         "Vompatit",
+        "Yrmyt",
         "Zombit"
     ]
 }
