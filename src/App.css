@@ -1,9 +1,13 @@
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 8px;
+  width: 100%;
+  min-width: 20vh;
+  max-height: 100vh;
 }
 
 .card {
@@ -28,4 +32,18 @@
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.history {
+  position: absolute;
+  margin-top: 5vh;
+  min-width: 100%;
+  text-align: center;
+  top: 100%; /* Start just below the button */
+  z-index: 10; /* Ensures it's above other elements */
+  padding: 10px; /* Add some padding around the content */
+}
+
+.history p {
+  margin: 5px 0; /* Spacing between name entries */
 }

@@ -10,12 +10,26 @@ const generateRandomName = () => {
 
 const App: React.FC = () => {
   const [name, setName] = useState<{ firstName: string, lastName: string } | null>(null);
+  const [history, setHistory] = useState<Array<{ firstName: string, lastName: string }>>([]);
 
   useEffect(() => {
     if (first_names.length > 0 && last_names.length > 0) {
       setName(generateRandomName());
     }
   }, []);
+
+  const handleNewName = () => {
+    if (name) {
+      setHistory(prevHistory => {
+        const newHistory = [name, ...prevHistory];
+        if (newHistory.length > 5) {
+          newHistory.pop(); // Keep only the last 5 names
+        }
+        return newHistory;
+      });
+    }
+    setName(generateRandomName());
+  };
 
   return (
     <>
@@ -29,11 +43,16 @@ const App: React.FC = () => {
           }
         </div>
         <div className="card">
-          <button
-            onClick={() => setName(generateRandomName())}
-          >
+          <button onClick={handleNewName}>
             Anna hassu nimi
           </button>
+        </div>
+        <div className="history">
+          {history.map((item, index) => (
+          <p key={index}>
+          {item.firstName.endsWith('-') ? `${item.firstName}${item.lastName}` : `${item.firstName} ${item.lastName}`}
+          </p>
+          ))}
         </div>
       </div>
     </>

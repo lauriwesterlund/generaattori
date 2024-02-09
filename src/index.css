@@ -23,7 +23,9 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 320px;
-  min-height: 100vh;
+  max-width: 100%;
+  min-height: 90vh;
+  max-height: 90vh;
 }
 
 button {
